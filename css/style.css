@@ -33,6 +33,13 @@
   display: inline-block;
 }
 
+.work-subtitle2 {
+  font-size: 23px;
+  font-family: hind,sans-serif;
+  font-weight: bold;
+  display: inline-block;
+}
+
 .work-subhead {
   font-size: 25px;
   font-weight: bold;
@@ -43,6 +50,14 @@
   /*color: #1de9b6;*/
   /*color: #26a69a;*/
   color: #80cbc4;
+}
+
+.work-subhead2 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 50px;
+  /*color: #880e4f;*/
+  color: #ad1457;
 }
 
 .text1 {
