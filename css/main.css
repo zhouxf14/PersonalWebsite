@@ -187,9 +187,13 @@ h4 {
 }
 
 .drop {
-	background:#09f;
+/*	background:#09f;
 	font-weight:bold;
-	padding:1em;
+	padding:1em;*/
+}
+
+.drop img {
+	width: 50%;
 }
 
 #download {
