@@ -20,6 +20,24 @@
 	}
 }
 
+@media only screen and (max-width: 400px) {
+	.timeline {
+		display: none;
+	}
+	.timeline_s {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.timeline {
+		display: block;
+	}
+	.timeline_s {
+		display: none;
+	}
+}
+
 @media only screen and (min-width: 600px) and (max-width: 992px) {
 /*	.carousel {
 		height: 400px;

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>VISED</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-    <!-- my own css file -->
-    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-    <!-- <link rel='stylesheet' href='css/ewxggx.css'> -->
-    <link type="text/css" rel="stylesheet" href="css/one.css"  media="screen,projection"/>
- 	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+  <title>VISED</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <!-- my own css file -->
+  <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+  <!-- <link rel='stylesheet' href='css/ewxggx.css'> -->
+  <link type="text/css" rel="stylesheet" href="css/one.css"  media="screen,projection"/>
+  <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
-    <link href="css/anime.css" rel="stylesheet">
+  <!-- <link href="css/anime.css" rel="stylesheet"> -->
 	<meta charset="utf-8">
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -32,20 +32,36 @@
       <div class="title_image"></div>
       <section class="timeline">
         <ul>
-          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step1!">Sketch Straight Lines</a></div></li>
-          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step2!">Squares and circles</a></div></li>
-          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step3!">Complex 2D objects</a></div></li>
+          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step1">Sketch Straight Lines</a></div></li>
+          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step2">Squares and circles</a></div></li>
+          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step3">Complex 2D objects</a></div></li>
+        </ul>
+      </section>
+      <section class="timeline_s center">
+        <ul>
+          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step1">Sketch Straight Lines</a></div></li>
+          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step2">Squares and circles</a></div></li>
+          <li data-position="left" data-tooltip="Click and Go!" class="tooltipped"><div><a href="#step3">Complex 2D objects</a></div></li>
         </ul>
       </section>
     </div>
-    <div id="step1">
-      <div class="row center">Which one is yours?</div>
+    <div id="step1" class="scrollspy">
+      <div class="row center">Which one is your straight line?</div>
+      <div class="row">
+        <div class="col s6">
+          <div class="anim">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800"><g fill="none" fill-rule="evenodd"><path stroke="#4149a1" d="M700 50 v300"/></g></svg>
+          </div>
+        </div>
+        <div class="col s6"><span class="left">test right</span></div>
+      </div>
     </div>
     
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/base.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script src='js/ymlarg.js'></script>
     <script type="text/javascript" src="js/one.js"></script>
     <!-- <script type="text/javascript" src="js/one.js"></script> -->
     <!-- <script src="../../anime.js"></script> -->
