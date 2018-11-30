@@ -18,6 +18,10 @@ $(document).ready(function(){
 	// 	location.href = id + ".html";
 	// });
 
+	$("#one").click(function() {
+		window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "one_mobile.html" :  "one.html"
+	});
+
 	$("#one").hover(function(){
 		if ($('#one').hasClass('active')) {
 			$("#one img").attr("src","images/step1_hover.png");
