@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	$(window).resize(function(){
+		location.reload()
+	});
+	var guideline_height = $(window).height() - $("nav").height();
+  	$("#guideline").height(guideline_height);
+
+	var cube_height = $(window).height();
+  	$("#cubes").height(cube_height);
+
 	$('.cube ul').css("transform", "rotateX(-30deg) rotateY(-60deg) rotateZ(0deg)");
 	var x = 0;
 	var y = 0;
@@ -8,13 +17,27 @@ $(document).ready(function() {
 	// 	$('.cube ul').css("animation“, "willRote 7s ease-in-out infinite alternate");
 	// });
 
+	$("#play").click(function() {
+		$(".cube_still").toggleClass("invisable");
+		$(".cube_rotate").toggleClass("invisable");
+		$("#play").toggleClass("invisable");
+		$("#pause").toggleClass("invisable");
+	});
+
+	$("#pause").click(function() {
+		$(".cube_still").toggleClass("invisable");
+		$(".cube_rotate").toggleClass("invisable");
+		$("#play").toggleClass("invisable");
+		$("#pause").toggleClass("invisable");
+	});
+
 	$('#top').click(function() {
 		z = z - 1;
 		var rotate_z = 30 * z;
 		var rotate_x = 30 * x - 30;
 		var rotate_y = 30 * y - 60;
 		var rotate = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) rotateZ(" + rotate_z + "deg)";
-		$('.cube ul').css("transform", rotate);
+		$('.cube_still').css("transform", rotate);
 	});
 
 	$('#down').click(function() {
@@ -23,7 +46,7 @@ $(document).ready(function() {
 		var rotate_x = 30 * x - 30;
 		var rotate_y = 30 * y - 60;
 		var rotate = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) rotateZ(" + rotate_z + "deg)";
-		$('.cube ul').css("transform", rotate);
+		$('.cube_still').css("transform", rotate);
 	});
 
 	$('#left').click(function() {
@@ -32,7 +55,7 @@ $(document).ready(function() {
 		var rotate_x = 30 * x - 30;
 		var rotate_y = 30 * y - 60;
 		var rotate = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) rotateZ(" + rotate_z + "deg)";
-		$('.cube ul').css("transform", rotate);
+		$('.cube_still').css("transform", rotate);
 	});
 
 	$('#right').click(function() {
@@ -41,7 +64,7 @@ $(document).ready(function() {
 		var rotate_x = 30 * x - 30;
 		var rotate_y = 30 * y - 60;
 		var rotate = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) rotateZ(" + rotate_z + "deg)";
-		$('.cube ul').css("transform", rotate);
+		$('.cube_still').css("transform", rotate);
 	});
 
 	$('#front').click(function() {
@@ -50,7 +73,7 @@ $(document).ready(function() {
 		var rotate_x = 30 * x - 30;
 		var rotate_y = 30 * y - 60;
 		var rotate = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) rotateZ(" + rotate_z + "deg)";
-		$('.cube ul').css("transform", rotate);
+		$('.cube_still').css("transform", rotate);
 	});
 
 	$('#back').click(function() {
@@ -59,7 +82,7 @@ $(document).ready(function() {
 		var rotate_x = 30 * x - 30;
 		var rotate_y = 30 * y - 60;
 		var rotate = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) rotateZ(" + rotate_z + "deg)";
-		$('.cube ul').css("transform", rotate);
+		$('.cube_still').css("transform", rotate);
 	});
 
 });

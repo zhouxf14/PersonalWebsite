@@ -89,12 +89,21 @@ svg {
   /*background: #F45B69;*/
 }
 
-.guideline {
-  margin: 40px auto 20px auto;
+.tips {
+  margin: 0 auto;
+  padding-top: 100px;
+
   text-align: center;
   width: 100%;
   font-size: 25px;
-  color: #fff;
+  /*color: #fff;*/
+  color: #4149a1;
+}
+
+.preguide {
+  color: #d4d4e4;
+  text-align: center;
+  font-size: 35px;
 }
 
 .btn-list .btn-floating {
@@ -105,4 +114,8 @@ svg {
 
 .cylinder img {
   width: 20%;
+}
+
+#cubes {
+  background-color: #d3d7ff;
 }
