@@ -5,8 +5,9 @@ $(document).ready(function() {
 	var guideline_height = $(window).height() - $("nav").height();
   	$("#guideline").height(guideline_height);
 
-	var cube_height = $(window).height();
-  	$("#cubes").height(cube_height);
+	var window_height = $(window).height();
+  	$("#cubes").height(window_height);
+  	$("#cylinder").height(window_height);
 
 	$('.cube ul').css("transform", "rotateX(-30deg) rotateY(-60deg) rotateZ(0deg)");
 	var x = 0;
