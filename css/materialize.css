@@ -5277,7 +5277,8 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  /*background-color: #26a69a;*/
+  background-color: #4149a1;
   border-radius: 50%;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;

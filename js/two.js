@@ -87,10 +87,6 @@ $(document).ready(function() {
 		$('.cube_still').css("transform", rotate);
 	});
 
-	$('.carousel.carousel-slider').carousel({
-		fullWidth: true,
-		indicators: true
-	});
 });
 
 
