@@ -85,7 +85,11 @@ $(document).ready(function() {
 		var rotate = "rotateX(" + rotate_x + "deg) rotateY(" + rotate_y + "deg) rotateZ(" + rotate_z + "deg)";
 		$('.cube_still').css("transform", rotate);
 	});
-
+	
+	$('.carousel.carousel-slider').carousel({
+		fullWidth: true,
+		indicators: true
+	});
 });
 
 

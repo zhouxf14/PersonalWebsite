@@ -123,3 +123,8 @@ svg {
 #cubes {
   background-color: #d3d7ff;
 }
+
+#guideline ul {
+   margin-top: 0; 
+   margin-bottom: 0;
+}
