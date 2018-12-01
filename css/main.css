@@ -186,6 +186,19 @@ h4 {
 	z-index:101;
 }
 
+#easing .title {
+	font-size: 42px;
+}
+
+#easing .btn-floating {
+	margin-left: 20px;
+	background-color: #4149a1;
+}
+
+#easing a {
+	color: #fff;
+}
+
 .drop {
 /*	background:#09f;
 	font-weight:bold;
